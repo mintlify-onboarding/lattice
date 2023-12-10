@@ -1,0 +1,16 @@
+---
+title: "Expanding Objects"
+---
+
+Some objects contain references to other related object. For example, a `Feedback` has an associated `Author`. Those objects can be expanded inline with the `expand` request parameter. Fields that can be expanded are noted in this documentation. This parameter is available for certain API requests, and applies to the response of that request only.
+
+You can expand multiple objects at once by identifying multiple items in the expand array.
+
+cURL
+
+`curl https://api.latticehq.com/v1/feedbacks \
+  -H "Authorization: Bearer abc123" \
+  -d "expand[]"=author \
+  -d "expand[]"=targets \
+  -G
+`

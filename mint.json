@@ -1,0 +1,76 @@
+{
+    "name": "Lattice",
+    "logo": {
+      "light": "/logo/light.png",
+      "dark": "/logo/dark.png"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+      "primary": "#16B8A2",
+      "light": "#32D4BE",
+      "dark": "#16B8A2"
+    },
+    "topbarCtaButton": {
+      "name": "Sign In",
+      "url": "https://lattice.com/signin"
+    },
+    "anchors": [
+      {
+        "name": "",
+        "icon": "",
+        "url": ""
+      }
+    ],
+    "navigation": [
+        {
+            "group": "Getting Started",
+            "pages": [
+              "reference/introduction",
+              "reference/authentication",
+              "reference/pagination",
+              "reference/expanding-objects",
+              "reference/rate-limits",
+              "reference/using-postman"
+            ]
+        },
+        {
+        "group": "Lattice API",
+        "pages": [
+            "api-reference/get-v1customattribute",
+            "api-reference/get-v1customattributevalue",
+            "api-reference/get-v1department",
+            "api-reference/get-v1departments",
+            "api-reference/get-v1feedback",
+            "api-reference/get-v1feedbacks",
+            "api-reference/get-v1competency",
+            "api-reference/get-v1goal",
+            "api-reference/get-v1goals",
+            "api-reference/get-v1me",
+            "api-reference/get-v1question",
+            "api-reference/get-v1questionrevision",
+            "api-reference/get-v1reviewcycle",
+            "api-reference/get-v1reviewcycle-reviewees",
+            "api-reference/get-v1reviewcycle-reviews",
+            "api-reference/get-v1reviewcycles",
+            "api-reference/get-v1reviewee",
+            "api-reference/get-v1reviewee-reviews",
+            "api-reference/get-v1tag",
+            "api-reference/get-v1tags",
+            "api-reference/get-v1task",
+            "api-reference/get-v1update",
+            "api-reference/get-v1updates",
+            "api-reference/get-v1user",
+            "api-reference/get-v1user-directreports",
+            "api-reference/get-v1user-customattributes",
+            "api-reference/get-v1user-goals",
+            "api-reference/get-v1user-tasks",
+            "api-reference/get-v1users"            
+        ]
+      }
+    ],
+    "footerSocials":
+      {
+          "twitter": "",
+          "linkedin": ""
+      }
+  }

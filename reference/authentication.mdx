@@ -1,0 +1,23 @@
+---
+title: "Authentication"
+---
+
+The Lattice API uses API keys to authenticate requests. You can view and manage your API keys in the Lattice admin dashboard.
+
+Your API keys carry the same privileges of the user who created them, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth.
+
+Authentication to the API is performed via [Bearer Authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/). Provide your API key as the bearer auth value.
+
+All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail with a `401 unauthorized` response.
+
+> 🚧
+> 
+> Note on CORS
+> 
+> The Lattice API was designed to only be called from a server and thus does not provide any CORS ability. This is to protect you and your user's data. By calling this API from a browser would expose your bearer tokens and allow a malicious actor to access data they should not be exposed to.
+
+Authenticated Request
+
+`curl https://api.latticehq.com/v1/goals \
+  -H "Authorization: Bearer <token>"
+`

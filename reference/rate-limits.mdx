@@ -1,21 +1,19 @@
 ---
 title: "Rate Limits"
+description: The API rating limit is 240 requests per minute.
 ---
-
-The API rating limit is 240 requests per minute.
 
 The returned HTTP headers of any API request show your current rate limit status:
 
-cURL
-
-`curl -i https://api.latticehq.com/v1/users
+```bash cURL
+curl -i https://api.latticehq.com/v1/users
 HTTP/1.1 200 OK
 Date: Mon, 01 Dec 2019 12:35:00 GMT
 Status: 200 OK
 X-RateLimit-Limit: 240
 X-RateLimit-Remaining: 0
 X-RateLimit-Reset: 1573501292
-`
+```
 
 | Header Name           | Description                                                                                                               |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -26,11 +24,10 @@ X-RateLimit-Reset: 1573501292
 
 If you exceed the rate limit, an error response returns:
 
-HTTP
-
-`HTTP/1.1 429 Too Many Requests
+```HTTP HTTP
+HTTP/1.1 429 Too Many Requests
 Date: Mon, 01 Dec 2019 12:35:00 GMT
 Retry-After: 39
 
 Too Many Requests
-`
+```

@@ -6,11 +6,10 @@ Some objects contain references to other related object. For example, a `Feedbac
 
 You can expand multiple objects at once by identifying multiple items in the expand array.
 
-cURL
-
-`curl https://api.latticehq.com/v1/feedbacks \
+```bash cURL
+curl https://api.latticehq.com/v1/feedbacks \
   -H "Authorization: Bearer abc123" \
   -d "expand[]"=author \
   -d "expand[]"=targets \
   -G
-`
+```

@@ -6,7 +6,7 @@
         },
         "servers": [
             {
-                "url": "api.latticehq.com",
+                "url": "https://api.latticehq.com",
                 "description": "Main (production) sever"
             }
         ],

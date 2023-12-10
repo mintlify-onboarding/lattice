@@ -16,11 +16,27 @@
     },
     "anchors": [
       {
-        "name": "",
-        "icon": "",
-        "url": ""
+        "name": "Help Center",
+        "icon": "block-question",
+        "url": "https://help.lattice.com/hc/en-us"
+      },
+      {
+        "name": "Privacy",
+        "icon": "lock",
+        "url": "https://lattice.com/privacy/home"
+      },
+      {
+        "name": "Blog",
+        "icon": "newspaper",
+        "url": "https://lattice.com/blog"
       }
     ],
+    "tabs": [
+      {
+          "name": "API Reference",
+          "url": "api-reference"
+      }
+  ],
     "navigation": [
         {
             "group": "Getting Started",
@@ -70,7 +86,7 @@
     ],
     "footerSocials":
       {
-          "twitter": "",
-          "linkedin": ""
+          "twitter": "https://twitter.com/LatticeHQ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+          "linkedin": "https://www.linkedin.com/company/lattice-hq/"
       }
   }

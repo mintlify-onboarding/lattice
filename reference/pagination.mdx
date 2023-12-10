@@ -6,9 +6,8 @@ All top-level API resources have support for bulk fetches via "list" API methods
 
 Lattice utilizes cursor-based pagination via the `startingAfter` parameter. `startingAfter` takes a cursor value (see below) and return objects in reverse chronological order listed after the cursor.
 
-Response
-
-`{
+```json Response
+{
   "object": "list",
   "hasMore": true,
   "endingCursor": "YXJyYXljb25uZWN0aW9uJDQkMQ==",
@@ -18,16 +17,16 @@ Response
     {...}
   }
 }
-`
+```
 
-#### Arguments
+## Arguments
 
 | Argument Name                       | Description                                                                                                                                                                                                                                                                                                        |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | limit \- (optional, defaults to 10) | A limit on the number of objects to be returned. Must be a number between 1 and 100.                                                                                                                                                                                                                               |
 | startingAfter \- (optional)         | A cursor for use in pagination. startingAfter is an opaque string that defines your place in the list. For instance, if you make a list request and receive 100 objects, with endingCursor of cursor\_foo, your subsequent call can include startingAfter=cursor\_foo in order to fetch the next page of the list. |
 
-#### List Response
+## List Response
 
 | Key Name                            | Description                                                                                                                                                                              |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
